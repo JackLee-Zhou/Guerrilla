@@ -1,0 +1,6 @@
+
+message LoginAck {
+    required string timeStap =1;
+    required int64 serverId =2;
+    required string msg =3;
+}

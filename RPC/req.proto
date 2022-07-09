@@ -1,0 +1,5 @@
+// 携带的 token 是用户第一次注册登录产生的，是其唯一的标识符
+message Login {
+    required int64 userId =1;
+    required string token =2;
+}
