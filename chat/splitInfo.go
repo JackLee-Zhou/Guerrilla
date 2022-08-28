@@ -1,7 +1,12 @@
 package chat
 
-// 该包将会负责将每次通信的数据分片发送
+import "guerrilla/pb"
 
-func SplitMessage() {
+// 该包将会负责将每次通信的数据分片工作
 
+// SplitMessage 分割数据
+func SplitMessage(date []byte) *pb.Trans {
+	trans := &pb.Trans{}
+
+	return trans
 }
