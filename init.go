@@ -7,7 +7,7 @@ import (
 
 var loadTime time.Time
 
-// TODO 加载配置，进行装载的初始化
+// TODO load the config
 func init() {
 	fmt.Println(loadTime.UTC().String())
 }

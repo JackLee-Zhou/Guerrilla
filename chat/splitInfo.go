@@ -2,9 +2,9 @@ package chat
 
 import "guerrilla/pb"
 
-// 该包将会负责将每次通信的数据分片工作
+// this package will split the date in  each  transfer
 
-// SplitMessage 分割数据
+// SplitMessage split the date
 func SplitMessage(date []byte) *pb.Trans {
 	trans := &pb.Trans{}
 

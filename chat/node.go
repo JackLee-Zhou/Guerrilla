@@ -9,12 +9,12 @@ import (
 )
 
 func NewNode() (host.Host, error) {
-	// 装载监听地址
-	addr,_ :=multiaddr.NewMultiaddr("/ip4/127.0.0.1/tcp/0")
+	// load the listen address
+	addr, _ := multiaddr.NewMultiaddr("/ip4/127.0.0.1/tcp/0")
 	host, err := libp2p.New(
 		libp2p.ListenAddrs(addr),
 	)
-	
+
 	return host, err
 }
 
